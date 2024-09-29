@@ -17,6 +17,7 @@ export default function StyledComponentsRegistry({ children }) {
     () => new ServerStyleSheet()
   );
 
+
   useServerInsertedHTML(() => {
     const styles = styledComponentsStyleSheet.getStyleElement();
     styledComponentsStyleSheet.instance.clearTag();
